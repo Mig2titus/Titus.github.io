@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BPMS41FJD2"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo">portfolio</a>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active"> Home</a>
+        <a href="#about"> About</a>
+        <a href="#services"> Services</a>
+        <a href="#portfolio"> Portfolio</a>
+        <a href="#contact"> Contact</a>
+      </nav>
+    </header>
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hi, I'm</h3>
+        <h1>Migadde Titus</h1>
+        <h3>And a <span>UI/UX Designer</span></h3>
+        <p>I love what I do and to learn more about programming</p>
+
+        <div class="social-media">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="images/My CV.docx" download class="btn">Download CV</a>
+      </div>
+      <div class="home-img">
+        <img src="images/tit.png" />
+      </div>
+    </section>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/tit4.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>
+              I'm a Ugandan currently pursuing a Bachelor Degree in Applied Information Technology
+              at ISBAT University.
+            </p>
+            <p>
+              I also hold a certificate in camera operation, Photography, Video & Audio editing, and Graphics
+              Designing using Adobe programs.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development interfaces</li>
+                <li><span>App Development</span><br />Building Android/iOS Apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+              <ul>
+                <li><span>2024-current</span><br />UI/UX BSC.Applied IT AT ISBAT UNIVERSITY</li>
+                <li><span>2016 to date</span><br />Cameraman/Video Editor at the Ministry of Public Service</li>
+                <li><span>2020 - 2023</span><br />UI/UX Building Android/iOS Apps at J&P Technology</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li><span>2024</span><br />UI/UX BSC.Applied IT ISBAT UNIVERSITY</li>
+                <li><span>2017-2019</span><br />in computer applications, videography, video editing, Graphics designing at TVS Audio and Visual Company</li>
+                <li><span>2014</span><br />Human Resource Management</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="Services-List">
+          <div>
+            <h2>Web Design</h2>
+            <i class="fa-thin fa-globe"></i>
+            <p>
+              I design the overall layout and aesthetic for websites, coding entire websites, meeting with clients to review website templates,
+              and running tests to preview layouts and website features.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa fa-code" style="font-size: 18px;"></i>
+            <h2>UI/UX Developer</h2>
+            <p>
+              I create a positive user experience that encourages customers to stick with the product and to succeed in today's market, organizations
+              must shift from product-centric to customer-centric thinking. They must use data and UI/UX design principles to understand consumer demands
+              rather than launch what they assume users desire.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I design awesome app screenshots for IOS and Android, create mobile app designs UI UX with Figma.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/tit1.png" />
+            <div class="layer">
+              <h3>Media App</h3>
+              <p>
+                This app connects you to videography and photography where pictures come alive, we offer professional
+                services and there is value for money to our clients
+              </p>
+              <a href="#"><i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/tit5.png" />
+            <div class="layer">
+              <h3>Video App</h3>
+              <p>
+                This app connects you to videography and photography come alive, for the professional
+                services we offer, value for money.
+              </p>
+              <a href="#"><i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/tit3.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                This app connects you to videography and photography come alive, for the professional
+                services we offer, value for money.
+              </p>
+              <a href="#"><i class="fa fa-external-link"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa fa-paper-plane" aria-hidden="true"></i>mig2titus@gmail.com</p>
+                        <p><i class="fa fa-phone-square" aria-hidden="true"></i>+256701120717</p>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="NAME" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
